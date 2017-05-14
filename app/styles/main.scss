@@ -1,0 +1,135 @@
+@import "partials/variables";
+
+html, body {
+    font-family: $oswald;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    color: $black;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    line-height: 2em;
+}
+
+a {
+    cursor: pointer !important;
+    color: $orange;
+
+    &:hover {
+        color: $blue;
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.slide {
+    min-height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    //background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    //background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    //background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    hr {
+        border-color: $lightblack;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content {
+        height: 100%;
+        width: 100%;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+
+        h1 {
+            // font-family: $opensans;
+            letter-spacing: 0.2em;
+            font-weight: 300;
+            font-size: 25px;
+        }
+
+        p {
+            margin-top: 15px;
+            // font-family: $opensans;
+            font-weight: 400;
+            font-size: 15px;
+        }
+    }
+}
+
+#canvas {
+    //display: none;
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    z-index: 0;
+
+    //padding:20px;
+}
+
+.slide.one {
+    // color: $white;
+        // background: $darkblue;
+    .content {
+        z-index: 1;
+        text-align: left;
+        // background: rgba(0,0,0,0.5);
+        h1 {
+            // font-family: $oswald;
+            //font-family: $opensans;
+            font-size: 30px;
+            letter-spacing: 5px;
+            
+        }
+
+        h2 {
+            //display: none;
+            margin-top: 15px;
+            // font-family: $oswald;
+            font-size: 26px;
+            font-weight: 400;
+            // letter-spacing: 15px;
+        }
+        a{
+            font-size: 18px;
+            margin-top: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .icons{
+            margin-top: 30px;
+            a{
+                
+                margin-right: 7px;
+            }
+        }
+    }
+}
+
+
+
